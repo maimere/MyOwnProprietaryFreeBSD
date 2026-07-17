@@ -1,6 +1,6 @@
 # MyOwnProprietaryFreeBSD
 
-MyOwnProprietaryFreeBSD is a downstream, proprietary operating system derived from the [FreeBSD Project](https://www.freebsd.org/). 
+MyOwnProprietaryFreeBSD is a proprietary operating system derived from the [FreeBSD Project](https://www.freebsd.org/). 
 
 Following the systematic replacement and [removal of GNU-licensed](https://wiki.freebsd.org/GPLinBase) toolchains and components from the base system, MyOwnProprietaryFreeBSD is proudly the first proprietary FreeBSD fork thanks to GPL cleansing. This enables a completely unencumbered, proprietary distribution model while maintaining the architectural stability and performance of FreeBSD.
 
