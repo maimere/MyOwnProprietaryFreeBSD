@@ -1,48 +1,17 @@
-FreeBSD Source:
----------------
-This is the top level of the FreeBSD source directory.
+# MyOwnProprietaryFreeBSD
 
-FreeBSD is an operating system used to power modern servers, desktops, and embedded platforms.
-A large community has continually developed it for more than thirty years.
-Its advanced networking, security, and storage features have made FreeBSD the platform of choice for many of the busiest web sites and most pervasive embedded networking and storage devices.
+MyOwnProprietaryFreeBSD is a downstream, proprietary operating system derived from the [FreeBSD Project](https://www.freebsd.org/). 
 
-For copyright information, please see [the file COPYRIGHT](COPYRIGHT) in this directory.
-Additional copyright information also exists for some sources in this tree - please see the specific source directories for more information.
+Following the systematic replacement and [removal of GNU-licensed](https://wiki.freebsd.org/GPLinBase) toolchains and components from the base system, MyOwnProprietaryFreeBSD is proudly the first proprietary FreeBSD fork thanks to GPL cleansing. This enables a completely unencumbered, proprietary distribution model while maintaining the architectural stability and performance of FreeBSD.
 
-The Makefile in this directory supports a number of targets for building components (or all) of the FreeBSD source tree.
-See build(7), config(8), [FreeBSD handbook on building userland](https://docs.freebsd.org/en/books/handbook/cutting-edge/#makeworld), and [Handbook for kernels](https://docs.freebsd.org/en/books/handbook/kernelconfig/) for more information, including setting make(1) variables.
+## License and Terms of Use
 
-For information on the CPU architectures and platforms supported by FreeBSD, see the [FreeBSD
-website's Platforms page](https://www.freebsd.org/platforms/).
+This distribution is proprietary software. All rights are reserved by Pedro Maimere.
 
-For official FreeBSD bootable images, see the [release page](https://download.freebsd.org/ftp/releases/ISO-IMAGES/).
+Users must strictly respect the terms outlined in the accompanying `LICENSE` file (End User License Agreement). Unauthorized reproduction, redistribution, modification, decompilation, or reverse engineering of any binary or source component of MyOwnProprietaryFreeBSD is explicitly prohibited.
 
-Source Roadmap:
----------------
-| Directory | Description |
-| --------- | ----------- |
-| bin | System/user commands. |
-| cddl | Source code for third-party software under the Common Development and Distribution License. |
-| contrib | Source code for third-party software. |
-| crypto | Source code for cryptographic libraries and commands (see [crypto/README](crypto/README)). |
-| etc | Template files for /etc. |
-| include | System include files. |
-| kerberos5 | Build system for Kerberos 5 (Heimdal). |
-| krb5 | Build system for Kerberos 5 (MIT). |
-| lib | System libraries. |
-| libexec | System commands intended to be executed by other commands or daemons. |
-| packages | Base system packages. |
-| release | Makefiles and scripts used for building releases and VM images. |
-| rescue | Build system for statically linked /rescue commands. |
-| sbin | System commands. |
-| secure | Build system for cryptographic libraries and commands (excluding Kerberos). |
-| share | Shared resources. |
-| stand | Boot loader sources. |
-| sys | Kernel sources (see [sys/README.md](sys/README.md)). |
-| targets | Support for experimental `DIRDEPS_BUILD` |
-| tests | Tests which can be run by Kyua.  See [tests/README](tests/README) for additional information. |
-| tools | Ancillary utilities and tests (not included in the build). |
-| usr.bin | User commands. |
-| usr.sbin | System administration commands. |
+## Upstream Contributions
 
-For information on synchronizing your source tree with one or more of the FreeBSD Project's development branches, please see [FreeBSD Handbook](https://docs.freebsd.org/en/books/handbook/cutting-edge/#current-stable).
+As this is a closed-source, proprietary fork, pull requests and direct code contributions are not accepted in this repository. 
+
+However, we strongly rely on and value the robustness of the foundational base system. Users and developers wishing to support this project are welcomed and encouraged to submit security fixes, device drivers, and general enhancements directly upstream to the FreeBSD Project at [freebsd/freebsd-src](https://github.com/freebsd/freebsd-src). Improvements merged into the upstream tree will be evaluated and integrated into future builds of MyOwnProprietaryFreeBSD.
